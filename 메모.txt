@@ -1,3 +1,14 @@
 층수를 잘 알고 있자.
 simseonbeom.github.io/html_floor_guide/
 누굴 공중에 띄울것인지 아닌지를 구분지어야 한다.
+---
+difault,relative.absolute,fixed 포시션 종류들
+relative는 내 자신을 기준으로 
+absolute는 부모에게 기준을 물어본다.
+ex)기준점이 필요할때 absolute라면, 그 요소의 부모 요소의 포지션을 물어봐서 그것을 따른다. 부모요소의 포지션값이 계속 static(아무것도 입력하지 않음)이라면, 브라우저의 기준을 따르게 된다. 
+fixed는 기준점 자체를 브라우저 기준으로 잡게 된다.
+
+relative는 1층 (필수작성요소 x)
+absolute는 2층 
+fixed는 2층 (x축 한개 y축 한개)
+

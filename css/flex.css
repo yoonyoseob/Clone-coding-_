@@ -1,0 +1,45 @@
+#container {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  /* 기본값 메인축: 가로 서브축: 세로 */
+  /* flex-direction: column; 메인축: 세로 서브축: 가로 */
+
+  /* justify-content는 메인축 정렬에 쓰이는 구문 */
+
+  /* justify-content: flex-start; */
+  /* 메인축의 정렬을 flex의 시작 부분부터 시작함 */
+  /* justify-content: flex-end; */
+  /* 메인축의 정렬을 flex의 끝부분부터 시작함 */
+  /* justify-content: center; */
+  /* 메인축의 정렬을 flex의 가운데부터 시작함 */
+  justify-content: space-between;
+
+  /* 서브축 정렬: align-items */
+  /* align-items: center; */
+  /* flex 박스를 기준으로 서브축 정렬 */
+
+  /* flex 박스를 썼을때, 내가 설정한 item의 크기를 넘어버리면, 그 형태가 유지 되지 않는다. 그것을 방지하기 위해 flex-wrap을 쓴다.*/
+  flex-wrap: wrap;
+  /* flex-wrap 쓰면 align-content 사용가능 content들 끼리의 서브축 정렬 */
+  align-content: space-between;
+}
+/* 들어가는 숫자 번째의 요소가 해당 설정을 갖게됨 밑의 예시는 01이 3 02가 1 즉 3:1 */
+#container .items:nth-child(1) {
+  flex-grow: 3;
+  order: 1; /* 위치 바꾸기  */
+}
+#container .items {
+  /* width: 200px; 이 값 대신 flex grow값을 많이 사용 */
+  height: 200px;
+  background: dodgerblue;
+  /* flex-grow: 1;  */
+  /* 창을 늘이고 줄였을때도 1 비율 유지 */
+  /* flex-shrink: 1;
+  flex-basis: 0; */
+  /* 위의 요소들을 다 합쳐 놓은것 */
+  flex: 1;
+  /*블럭 요소를 가로로 배치할때 쓰는 방법*/
+  /*float: left;*/
+  /* display: inline-block; */
+}

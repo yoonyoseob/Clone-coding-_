@@ -1,0 +1,3 @@
+flexbox에 쓰이는 개념은 부모 개념인 container, 자식 개념인 item이다.
+
+먼저 container에는 flexbox를 쓰기 위해소ㅓ 

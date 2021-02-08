@@ -1,3 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+
+    <style>
+        .wrap .box01{/*wrap안에 있는 box01에만 특정 스타일링을 주고 싶을때는 앞의 예시처럼 부모를 표시해주고 한칸 띄우는 것으로 나타낸다. 띄어쓰기를 붙이면 wrap box라는 class에 스타일링을 해주는 거고 그렇지 않으면 그것의 자식요소에만 스타일링을 해주는 것을 의미한다.*/
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+        .box01{
+            background-color: orange;
+        }
+        /*cascading실습으로, 위의 내용처럼 두 값이 서로 충돌할 경우에, 나중에 적은 값이 적용되는것이다.*/
+    </style>
+</head>
+<body>
+    <div class = "wrap">
+        <div class="box01"></div>
+    </div>
+    <div class="box01"></div>
+    <div class="box01"></div>
+    <!--class는 중복사용이 가능하다.-->
+
+</body>
+</html>
