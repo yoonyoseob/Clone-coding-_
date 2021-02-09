@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        .box-container01{
+            display: inline-flex;
+            flex-wrap: wrap;
+            align-items: stretch;
+            width: 1000px;
+            height: 180px;
+        }
+        .item{
+            display: flex;
+        }
+        .box-container01 .item:nth-child(1){
+            flex-grow: 1;
+            background-color: red;
+        }
+        .box-container01 .item:nth-child(2){
+            flex-grow: 2;
+            background-color: orange;
+        }
+        .box-container01 .item:nth-child(3){
+            flex-grow: 3;
+            background-color: yellow;
+        }
+        .box-container01 .item:nth-child(4){
+            flex-grow: 4;
+            background-color: green;
+        }
+        .box-container01 .item:nth-child(5){
+            flex-grow: 5;
+            background-color: violet;
+        }
+    </style>
+</head>
+<body>
+    <div class="box-container01">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+    </div>
+
+</body>
+</html>
